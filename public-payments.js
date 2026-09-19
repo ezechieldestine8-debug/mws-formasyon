@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-method]').forEach(button => button.addEventListener('click', event => { event.preventDefault(); document.querySelector('#inscription').scrollIntoView({behavior: 'smooth'}); }));

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Inscription à une formation professionnelle en cosmétologie." />
+    <title>Miley Hair Salon | Formation Cosmétologie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  <style>.public-registration .customize,.public-registration dialog{display:none!important}</style></head>
+  <body class="public-registration">
+    <div class="announcement">Places limitées · Réservez votre place aujourd’hui</div>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark">MHS</span><span class="brand-name" data-site-name>Miley Hair Salon</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="#formation">La formation</a><a href="#inscription">Inscription</a><a href="#paiement">Paiement</a>
+      </nav>
+      <a class="header-cta" href="#inscription">Je m’inscris</a>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Formation professionnelle</p>
+          <h1 data-hero-title>Révélez votre talent<br />en <em>cosmétologie.</em></h1>
+          <p class="hero-text" data-hero-text>Apprenez les gestes, les techniques et la confiance nécessaires pour bâtir votre avenir dans la beauté.</p>
+          <div class="hero-actions"><a class="button primary" href="#inscription">Réserver ma place <span>→</span></a><a class="text-link" href="#formation">Découvrir le programme</a></div>
+          <div class="trust"><span>✦</span><p><strong data-start-date>Prochaine session : bientôt</strong><br />Places volontairement limitées</p></div>
+        </div>
+        <div class="hero-visual">
+          <div class="arch"></div>
+          <div class="flyer-placeholder" id="flyerDisplay">
+            <img id="flyerImage" alt="Flyer de la formation" hidden />
+            <div class="flyer-fallback"><span>FORMATION</span><strong>COSMÉTOLOGIE</strong><i>Votre beauté,<br />votre métier.</i></div>
+          </div>
+          <div class="hero-tag">✦ Certificat de formation</div>
+        </div>
+      </section>
+
+      <section id="formation" class="program section">
+        <div><p class="eyebrow">Ce qui vous attend</p><h2>Une formation pensée<br />pour vous faire <em>briller.</em></h2></div>
+        <div class="program-grid">
+          <article><span>01</span><h3>Application lace frontal</h3><p data-module-one>Apprenez la pose et les finitions dune lace frontal avec un rendu professionnel.</p></article>
+          <article><span>02</span><h3>Greffe &amp; makeup</h3><p data-module-two>Maitrisez les techniques de greffe et de makeup pour sublimer chaque cliente.</p></article>
+          <article><span>03</span><h3>Application dreads locs</h3><p data-module-three>Decouvrez lapplication, lentretien et les finitions de dreads locs.</p></article>
+        </div>
+      </section>
+
+      <section id="paiement" class="payment section">
+        <div class="payment-intro"><p class="eyebrow">Investissez en vous</p><h2>Votre place se réserve<br />en <em>deux temps.</em></h2><p>Choisissez l’étape qui vous concerne. Votre inscription est validée dès réception du premier paiement.</p></div>
+        <div class="payment-cards">
+          <article class="payment-card accent"><p>Étape 1</p><h3>Frais d’inscription</h3><strong data-registration-price>2 000 pesos</strong><small data-registration-note>À régler pour réserver votre place</small><a id="registrationPayment" class="button light" href="#inscription">Payer l’inscription →</a></article>
+          <article class="payment-card"><p>Étape 2</p><h3>Frais de participation</h3><strong data-participation-price>6 000 pesos</strong><small data-participation-note>À régler avant le début de la formation</small><a id="participationPayment" class="button outline" href="#inscription">Payer la participation →</a></article>
+        </div>
+      </section>
+
+      <section class="methods section" id="methodes-paiement">
+        <div class="methods-heading"><p class="eyebrow">Paiement sécurisé</p><h2>Choisissez votre<br /><em>moyen de paiement.</em></h2><p>Après avoir choisi l’étape de paiement, réglez selon la méthode qui vous convient.</p></div>
+        <div class="methods-grid">
+          <a class="method-card" data-method="card" href="#paiement"><span>◈</span><strong>Carte bancaire</strong><small>Visa · Mastercard</small></a>
+          <a class="method-card paypal" data-method="paypal" href="#paiement"><span>P</span><strong>PayPal</strong><small>Paiement en ligne</small></a>
+          <a class="method-card" data-method="moncash" href="#paiement"><span>MC</span><strong>MonCash</strong><small>Paiement mobile</small></a>
+          <a class="method-card" data-method="transfer" href="#paiement"><span>↗</span><strong>Virement bancaire</strong><small>Coordonnées sur demande</small></a>
+          <a class="method-card" data-method="cash" href="#paiement"><span>¤</span><strong>Espèces</strong><small>Sur rendez-vous</small></a>
+        </div>
+        
+      </section>      <section id="inscription" class="registration section">
+        <div class="registration-card">
+          <div class="form-heading"><p class="eyebrow">Prête à commencer ?</p><h2>Votre inscription</h2><p>Complétez ce formulaire. Vous pourrez ensuite l’envoyer par e-mail ou WhatsApp.</p></div>
+          <form id="registrationForm">
+            <div class="form-row"><label>Prénom et nom<input name="name" required placeholder="Votre nom complet" /></label><label>Téléphone<input name="phone" required type="tel" placeholder="Votre numéro" /></label></div>
+            <div class="form-row"><label>Adresse e-mail<input name="email" required type="email" placeholder="vous@email.com" /></label><label>Ville / quartier<input name="location" required placeholder="Où habitez-vous ?" /></label></div>
+            <label>Branche de formation choisie<select name="training" required><option value="">Sélectionnez votre spécialité</option><option>Application lace frontal</option><option>Greffe &amp; makeup</option><option>Application dreads locs</option></select></label><label>Étape de paiement souhaitée<select name="payment"><option>Frais d’inscription</option><option>Frais de participation</option><option>J’aimerais être contactée avant de payer</option></select></label><label>Méthode de paiement choisie<select name="paymentMethod" required><option value="">Sélectionnez une méthode</option><option>PayPal</option><option>Carte bancaire / Stripe</option><option>MonCash</option><option>Virement bancaire</option><option>Paiement en espèces</option></select></label>
+            <label>Un message pour nous ? <span>(facultatif)</span><textarea name="message" rows="3" placeholder="Vos questions ou précisions..."></textarea></label>
+            <label class="consent"><input type="checkbox" required /><span>J’accepte que mes informations soient utilisées pour traiter mon inscription.</span></label>
+            <div class="send-options"><button class="button primary" type="submit">Envoyer par e-mail <span>↗</span></button><button class="button whatsapp" type="button" id="whatsappButton">WhatsApp <span>↗</span></button></div>
+            <p class="form-note">Après l’envoi, nous vous confirmerons les prochaines étapes.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer><div><span class="brand-mark">MHS</span><strong data-site-name>Miley Hair Salon</strong></div><p>Formation en cosmétologie · <a id="emailLink" href="mailto:ezechieldestine8@gmail.com">ezechieldestine8@gmail.com</a> · <a id="phoneLink" href="https://wa.me/18297670244">+1 829 767 0244</a></p></footer>
+
+    
+    <script src="public.js"></script><script src="public-payments.js"></script>
+  </body>
+</html>

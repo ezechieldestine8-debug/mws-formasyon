@@ -1,0 +1,9 @@
+const settings = { siteName: 'Miley Hair Salon', heroTitle: 'Révélez votre talent en cosmétologie.', heroText: 'Apprenez les gestes, les techniques et la confiance nécessaires pour bâtir votre avenir dans la beauté.', startDate: 'Prochaine session : bientôt', registrationPrice: '2 000 pesos', participationPrice: '6 000 pesos' };
+const email = 'ezechieldestine8@gmail.com';
+const whatsapp = '18297670244';
+function text(selector, value) { document.querySelectorAll(selector).forEach(el => el.textContent = value); }
+text('[data-site-name]', settings.siteName); text('[data-hero-text]', settings.heroText); text('[data-start-date]', settings.startDate); text('[data-registration-price]', settings.registrationPrice); text('[data-participation-price]', settings.participationPrice);
+const title = document.querySelector('[data-hero-title]'); title.innerHTML = 'Révélez votre talent en <em>cosmétologie.</em>'.replace(' en ', ' en<br>');
+function formMessage() { const data = Object.fromEntries(new FormData(document.querySelector('#registrationForm'))); return `Nouvelle demande d'inscription – ${settings.siteName}\n\nNom : ${data.name}\nTéléphone : ${data.phone}\nE-mail : ${data.email}\nVille / quartier : ${data.location}\nFormation choisie : ${data.training}\nÉtape de paiement : ${data.payment}\nMéthode de paiement : ${data.paymentMethod}\nMessage : ${data.message || '—'}`; }
+document.querySelector('#registrationForm').addEventListener('submit', event => { event.preventDefault(); if (!event.currentTarget.reportValidity()) return; window.location.href = `mailto:${email}?subject=${encodeURIComponent('Nouvelle inscription – ' + settings.siteName)}&body=${encodeURIComponent(formMessage())}`; });
+document.querySelector('#whatsappButton').onclick = () => { const form = document.querySelector('#registrationForm'); if (!form.reportValidity()) return; window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(formMessage())}`, '_blank', 'noopener'); };
