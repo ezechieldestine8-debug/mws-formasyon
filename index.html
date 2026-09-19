@@ -11,23 +11,23 @@
     <link rel="stylesheet" href="style.css" />
   <style>.public-registration .customize,.public-registration dialog{display:none!important}</style></head>
   <body class="public-registration">
-    <div class="announcement">Places limitées · Réservez votre place aujourd’hui</div>
+    <div class="announcement">Places limitées · Réservez votre place aujourd'hui</div>
     <header class="site-header">
       <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
         <span class="brand-mark">MHS</span><span class="brand-name" data-site-name>Miley Hair Salon</span>
       </a>
       <nav aria-label="Navigation principale">
-        <a href="#formation">La formation</a><a href="#inscription">Inscription</a><a href="#paiement">Paiement</a>
+        <a href="#formation">La formation</a><a href="#calendrier">Calendrier</a><a href="#inscription">Inscription</a><a href="#paiement">Paiement</a>
       </nav>
-      <a class="header-cta" href="#inscription">Je m’inscris</a>
+      <a class="header-cta" href="#inscription">Je m'inscris</a>
     </header>
 
     <main>
       <section id="accueil" class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Formation professionnelle</p>
-          <h1 data-hero-title>Révélez votre talent<br />en <em>cosmétologie.</em></h1>
-          <p class="hero-text" data-hero-text>Apprenez les gestes, les techniques et la confiance nécessaires pour bâtir votre avenir dans la beauté.</p>
+          <h1 data-hero-title>Vos mains ont un talent.<br />Offrez-lui un <em>métier.</em></h1>
+          <p class="hero-text" data-hero-text>Lace frontal, greffe, makeup : les techniques qui font une vraie professionnelle, encadrée du premier geste jusqu'au certificat.</p>
           <div class="hero-actions"><a class="button primary" href="#inscription">Réserver ma place <span>→</span></a><a class="text-link" href="#formation">Découvrir le programme</a></div>
           <div class="trust"><span>✦</span><p><strong data-start-date>Prochaine session : bientôt</strong><br />Places volontairement limitées</p></div>
         </div>
@@ -35,14 +35,28 @@
           <div class="arch"></div>
           <div class="flyer-placeholder" id="flyerDisplay">
             <img id="flyerImage" alt="Flyer de la formation" hidden />
-            <div class="flyer-fallback"><span>FORMATION</span><strong>COSMÉTOLOGIE</strong><i>Votre beauté,<br />votre métier.</i></div>
+            <svg class="flyer-art" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flyer de la formation en cosmétologie Miley Hair Salon">
+              <rect x="14" y="14" width="372" height="472" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55"/>
+              <text x="200" y="72" text-anchor="middle" fill="var(--gold-soft)" font-family="'DM Sans', sans-serif" font-size="11" letter-spacing="3">FORMATION PROFESSIONNELLE</text>
+              <text x="200" y="128" text-anchor="middle" fill="#FFFFFF" font-family="'Playfair Display', serif" font-size="40" font-weight="600">Cosmétologie</text>
+              <line x1="160" y1="150" x2="240" y2="150" stroke="var(--gold)" stroke-width="1"/>
+              <text x="200" y="204" text-anchor="middle" fill="#F3E8E0" font-family="'DM Sans', sans-serif" font-size="15">Lace frontal</text>
+              <text x="200" y="234" text-anchor="middle" fill="#F3E8E0" font-family="'DM Sans', sans-serif" font-size="15">Greffe &amp; makeup</text>
+              <text x="200" y="264" text-anchor="middle" fill="#F3E8E0" font-family="'DM Sans', sans-serif" font-size="15">Dreads locs</text>
+              <circle cx="200" cy="330" r="1.6" fill="var(--gold)"/>
+              <text x="200" y="358" text-anchor="middle" fill="var(--gold-soft)" font-family="'DM Sans', sans-serif" font-size="13" letter-spacing="1">1 mois · Lundi &amp; Mardi</text>
+              <rect x="130" y="382" width="140" height="34" rx="17" fill="none" stroke="var(--gold)" stroke-width="1"/>
+              <text x="200" y="404" text-anchor="middle" fill="var(--gold-soft)" font-family="'DM Sans', sans-serif" font-size="12" letter-spacing="1">2 000 PESOS</text>
+              <text x="200" y="452" text-anchor="middle" fill="#FFFFFF" font-family="'Playfair Display', serif" font-style="italic" font-size="15">Miley Hair Salon</text>
+              <text x="200" y="472" text-anchor="middle" fill="#C9BFB2" font-family="'DM Sans', sans-serif" font-size="10.5">+1 829 767 0244 · ezechieldestine8@gmail.com</text>
+            </svg>
           </div>
           <div class="hero-tag">✦ Certificat de formation</div>
         </div>
       </section>
 
       <section id="formation" class="program section">
-        <div><p class="eyebrow">Ce qui vous attend</p><h2>Une formation pensée<br />pour vous faire <em>briller.</em></h2></div>
+        <div><p class="eyebrow">Ce qui vous attend</p><h2>De la première mèche<br />au geste de <em>pro.</em></h2></div>
         <div class="program-grid">
           <article><span>01</span><h3>Application lace frontal</h3><p data-module-one>Apprenez la pose et les finitions dune lace frontal avec un rendu professionnel.</p></article>
           <article><span>02</span><h3>Greffe &amp; makeup</h3><p data-module-two>Maitrisez les techniques de greffe et de makeup pour sublimer chaque cliente.</p></article>
@@ -50,16 +64,30 @@
         </div>
       </section>
 
+      <section id="calendrier" class="program section">
+        <div><p class="eyebrow">Organisation</p><h2>Un mois de formation,<br />réparti en <em>huit journées.</em></h2><p style="margin-top:12px;color:inherit;">Cours les <strong>lundis et mardis</strong>, 4 semaines au total.</p></div>
+        <div class="program-grid" style="margin-top:32px;">
+          <article><span>S1 · Lun</span><h3>Application lace frontal &amp; greffe</h3><p>Initiation : bases théoriques et premiers gestes de pose.</p></article>
+          <article><span>S1 · Mar</span><h3>Makeup</h3><p>Initiation aux bases du maquillage professionnel.</p></article>
+          <article><span>S2 · Lun</span><h3>Application lace frontal &amp; greffe</h3><p>Perfectionnement des techniques de pose et de fixation.</p></article>
+          <article><span>S2 · Mar</span><h3>Makeup</h3><p>Perfectionnement des techniques d'application.</p></article>
+          <article><span>S3 · Lun</span><h3>Application lace frontal &amp; greffe</h3><p>Pratique avancée sur modèle.</p></article>
+          <article><span>S3 · Mar</span><h3>Makeup</h3><p>Pratique avancée sur modèle.</p></article>
+          <article><span>S4 · Lun</span><h3>Application lace frontal &amp; greffe</h3><p>Finitions et révision générale.</p></article>
+          <article><span>S4 · Mar</span><h3>Makeup</h3><p>Finitions, évaluation finale et remise du certificat.</p></article>
+        </div>
+      </section>
+
       <section id="paiement" class="payment section">
-        <div class="payment-intro"><p class="eyebrow">Investissez en vous</p><h2>Votre place se réserve<br />en <em>deux temps.</em></h2><p>Choisissez l’étape qui vous concerne. Votre inscription est validée dès réception du premier paiement.</p></div>
+        <div class="payment-intro"><p class="eyebrow">Investissez en vous</p><h2>Deux étapes vous séparent<br />de votre <em>place.</em></h2><p>Choisissez l'étape qui vous concerne. Votre inscription est validée dès réception du premier paiement.</p></div>
         <div class="payment-cards">
-          <article class="payment-card accent"><p>Étape 1</p><h3>Frais d’inscription</h3><strong data-registration-price>2 000 pesos</strong><small data-registration-note>À régler pour réserver votre place</small><a id="registrationPayment" class="button light" href="#inscription">Payer l’inscription →</a></article>
+          <article class="payment-card accent"><p>Étape 1</p><h3>Frais d'inscription</h3><strong data-registration-price>2 000 pesos</strong><small data-registration-note>À régler pour réserver votre place</small><a id="registrationPayment" class="button light" href="#inscription">Payer l'inscription →</a></article>
           <article class="payment-card"><p>Étape 2</p><h3>Frais de participation</h3><strong data-participation-price>6 000 pesos</strong><small data-participation-note>À régler avant le début de la formation</small><a id="participationPayment" class="button outline" href="#inscription">Payer la participation →</a></article>
         </div>
       </section>
 
       <section class="methods section" id="methodes-paiement">
-        <div class="methods-heading"><p class="eyebrow">Paiement sécurisé</p><h2>Choisissez votre<br /><em>moyen de paiement.</em></h2><p>Après avoir choisi l’étape de paiement, réglez selon la méthode qui vous convient.</p></div>
+        <div class="methods-heading"><p class="eyebrow">Paiement sécurisé</p><h2>Choisissez votre<br /><em>moyen de paiement.</em></h2><p>Après avoir choisi l'étape de paiement, réglez selon la méthode qui vous convient.</p></div>
         <div class="methods-grid">
           <a class="method-card" data-method="card" href="#paiement"><span>◈</span><strong>Carte bancaire</strong><small>Visa · Mastercard</small></a>
           <a class="method-card paypal" data-method="paypal" href="#paiement"><span>P</span><strong>PayPal</strong><small>Paiement en ligne</small></a>
@@ -70,15 +98,15 @@
         
       </section>      <section id="inscription" class="registration section">
         <div class="registration-card">
-          <div class="form-heading"><p class="eyebrow">Prête à commencer ?</p><h2>Votre inscription</h2><p>Complétez ce formulaire. Vous pourrez ensuite l’envoyer par e-mail ou WhatsApp.</p></div>
+          <div class="form-heading"><p class="eyebrow">Prête à commencer ?</p><h2>Réservez votre place</h2><p>Complétez ce formulaire. Vous pourrez ensuite l'envoyer par e-mail ou WhatsApp.</p></div>
           <form id="registrationForm">
             <div class="form-row"><label>Prénom et nom<input name="name" required placeholder="Votre nom complet" /></label><label>Téléphone<input name="phone" required type="tel" placeholder="Votre numéro" /></label></div>
             <div class="form-row"><label>Adresse e-mail<input name="email" required type="email" placeholder="vous@email.com" /></label><label>Ville / quartier<input name="location" required placeholder="Où habitez-vous ?" /></label></div>
-            <label>Branche de formation choisie<select name="training" required><option value="">Sélectionnez votre spécialité</option><option>Application lace frontal</option><option>Greffe &amp; makeup</option><option>Application dreads locs</option></select></label><label>Étape de paiement souhaitée<select name="payment"><option>Frais d’inscription</option><option>Frais de participation</option><option>J’aimerais être contactée avant de payer</option></select></label><label>Méthode de paiement choisie<select name="paymentMethod" required><option value="">Sélectionnez une méthode</option><option>PayPal</option><option>Carte bancaire / Stripe</option><option>MonCash</option><option>Virement bancaire</option><option>Paiement en espèces</option></select></label>
+            <label>Branche de formation choisie<select name="training" required><option value="">Sélectionnez votre spécialité</option><option>Application lace frontal</option><option>Greffe &amp; makeup</option><option>Application dreads locs</option></select></label><label>Étape de paiement souhaitée<select name="payment"><option>Frais d'inscription</option><option>Frais de participation</option><option>J'aimerais être contactée avant de payer</option></select></label><label>Méthode de paiement choisie<select name="paymentMethod" required><option value="">Sélectionnez une méthode</option><option>PayPal</option><option>Carte bancaire / Stripe</option><option>MonCash</option><option>Virement bancaire</option><option>Paiement en espèces</option></select></label>
             <label>Un message pour nous ? <span>(facultatif)</span><textarea name="message" rows="3" placeholder="Vos questions ou précisions..."></textarea></label>
-            <label class="consent"><input type="checkbox" required /><span>J’accepte que mes informations soient utilisées pour traiter mon inscription.</span></label>
+            <label class="consent"><input type="checkbox" required /><span>J'accepte que mes informations soient utilisées pour traiter mon inscription.</span></label>
             <div class="send-options"><button class="button primary" type="submit">Envoyer par e-mail <span>↗</span></button><button class="button whatsapp" type="button" id="whatsappButton">WhatsApp <span>↗</span></button></div>
-            <p class="form-note">Après l’envoi, nous vous confirmerons les prochaines étapes.</p>
+            <p class="form-note">Après l'envoi, nous vous confirmerons les prochaines étapes.</p>
           </form>
         </div>
       </section>
@@ -88,5 +116,86 @@
 
     
     <script src="public.js"></script><script src="public-payments.js"></script>
+    <script>
+      // Archive de toutes les inscriptions confirmées : chaque envoi
+      // (par e-mail OU WhatsApp) atterrit dans le Google Sheet ci-dessous,
+      // qui sert de vraie liste consultable (confirmé / en attente).
+      (function () {
+        var ARCHIVE_EMAIL = "ezechieldestine8@gmail.com";
+        var WHATSAPP_NUMBER = "18297670244";
+        var SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwRdBufPPXSQzxHz7Im8ouc9-w8cmAjbKDwY-d6IBi6sXPP3QFS52DR9aq2nIXTSaDt/exec";
+
+        var form = document.getElementById("registrationForm");
+        var whatsappBtn = document.getElementById("whatsappButton");
+        if (!form) return;
+
+        function getPayload() {
+          var data = new FormData(form);
+          return {
+            name: data.get("name") || "",
+            phone: data.get("phone") || "",
+            email: data.get("email") || "",
+            location: data.get("location") || "",
+            training: data.get("training") || "",
+            payment: data.get("payment") || "",
+            paymentMethod: data.get("paymentMethod") || "",
+            message: data.get("message") || ""
+          };
+        }
+
+        function sendToSheet(payload) {
+          if (!SHEET_WEBHOOK_URL) return;
+          fetch(SHEET_WEBHOOK_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+          }).catch(function () {});
+        }
+
+        function buildLines(payload) {
+          return [
+            "Nouvelle inscription",
+            "",
+            "Nom : " + payload.name,
+            "Téléphone : " + payload.phone,
+            "E-mail : " + payload.email,
+            "Ville / quartier : " + payload.location,
+            "Formation choisie : " + payload.training,
+            "Étape de paiement : " + payload.payment,
+            "Méthode de paiement : " + payload.paymentMethod,
+            "Message : " + (payload.message || "—")
+          ];
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var payload = getPayload();
+          sendToSheet(payload);
+
+          var subject = "Nouvelle inscription — " + (payload.name || "sans nom");
+          var body = buildLines(payload).join("\n");
+          var gmailComposeUrl =
+            "https://mail.google.com/mail/?view=cm&fs=1" +
+            "&to=" + encodeURIComponent(ARCHIVE_EMAIL) +
+            "&su=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+          window.open(gmailComposeUrl, "_blank");
+        });
+
+        if (whatsappBtn) {
+          whatsappBtn.addEventListener("click", function () {
+            var payload = getPayload();
+            sendToSheet(payload);
+
+            var text = buildLines(payload).join("\n");
+            var waUrl =
+              "https://wa.me/" + WHATSAPP_NUMBER +
+              "?text=" + encodeURIComponent(text);
+            window.open(waUrl, "_blank");
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
